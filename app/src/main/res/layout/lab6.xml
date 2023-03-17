@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/lab6"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="64dp"
+    android:paddingRight="64dp"
+    android:paddingTop="16dp">
+
+    <RelativeLayout
+        android:id="@+id/bar"
+        android:layout_width="347dp"
+        android:layout_height="118dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/txtvw"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#73FEFEFE"
+            android:hint=" enter furniture"
+            android:maxLines="1"
+            android:selectAllOnFocus="true" />
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="match_parent"
+            android:layout_height="205dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="4dp"
+            android:layout_toEndOf="@+id/txtvw"
+            android:background="#ffa"
+            android:onClick="add_btn_clicked"
+            android:text="confirm"
+            android:textAllCaps="false" />
+
+        <EditText
+            android:id="@+id/numvw"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/txtvw"
+            android:layout_marginTop="12dp"
+            android:background="#73FFFFFF"
+            android:hint=" enter price"
+            android:inputType="number"
+            android:maxLines="1"
+            android:selectAllOnFocus="true" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="347dp"
+        android:layout_height="597dp"
+        android:layout_above="@+id/bar"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:background="#74FFFFFF" />
+</RelativeLayout>
